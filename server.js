@@ -1,6 +1,6 @@
 require('dotenv').config();
 const express = require('express');
-const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
+const stripe = require('stripe')('sk_test_51Op2jxSH07kZkgBpD5kzCOLjqKivucIgQqvKatgW2xqg5K7pnh7IypEmsJFj2BQm0cEe2T8hVbJj8iU7xey7GHFs00vK4FksXq');
 const cors = require('cors');
 const Razorpay = require('razorpay');
 
